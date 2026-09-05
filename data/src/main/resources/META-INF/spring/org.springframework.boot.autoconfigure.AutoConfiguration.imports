@@ -1,0 +1,2 @@
+nl.nlportal.data.DataAutoConfiguration
+nl.nlportal.data.liquibase.LiquibaseRunnerAutoConfiguration

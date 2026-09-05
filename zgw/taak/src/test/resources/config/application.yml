@@ -1,0 +1,29 @@
+graphql:
+    packages:
+        - "nl.nlportal"
+
+logging:
+    level:
+        reactor.netty.http.client.HttpClient: TRACE
+
+nl-portal:
+    config:
+        objectenapi:
+            enabled: true
+            properties:
+                url: http://localhost:8010
+                token: 0000000000000000000000000000000000000000
+        taak:
+            enabled: true
+            properties:
+                object-type-url: "http://localhost:8011/api/v1/objecttypes/3c24cab6-4346-4c7d-912b-e34a1e9e21bf"
+    authentication:
+        machtingsdienst:
+            resource-url: classpath:machtigingsdiensten.json
+
+spring:
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://localhost:8082/auth/realms/nlportal

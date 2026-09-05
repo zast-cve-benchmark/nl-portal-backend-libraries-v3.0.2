@@ -1,0 +1,6 @@
+services:
+    db:
+        ports:
+            - "5435:5432"
+        environment:
+            - POSTGRES_DB=case-test

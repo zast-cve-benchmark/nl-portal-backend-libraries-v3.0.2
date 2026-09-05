@@ -1,0 +1,10 @@
+query {
+    getProductTaken(productName: "erfpacht") {
+            id,
+            titel,
+            koppeling {
+                registratie,
+                value
+            }
+        }
+}

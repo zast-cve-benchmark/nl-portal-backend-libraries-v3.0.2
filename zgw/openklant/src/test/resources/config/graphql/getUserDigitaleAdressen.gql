@@ -1,0 +1,10 @@
+
+query {
+    getUserDigitaleAdressen {
+        uuid
+        waarde
+        type
+        omschrijving
+        referentie
+    }
+}

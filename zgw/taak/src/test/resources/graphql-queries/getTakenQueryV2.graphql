@@ -1,0 +1,31 @@
+query {
+    getTakenV2(pageSize:1) {
+        number
+        size
+        totalPages
+        totalElements
+        numberOfElements
+        content {
+            id,
+            titel
+            status
+            soort,
+            verloopdatum
+            portaalformulier {
+                formulier{
+                    soort,
+                    value
+                },
+                data
+            },
+            koppeling {
+                registratie,
+                value
+            }
+            identificatie {
+                type
+                value
+            }
+        }
+    }
+}
